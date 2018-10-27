@@ -11,7 +11,9 @@ import UIKit
 
 class usdAmountTextField: UITextField {
     
-    var buttonTapAction: (() -> Void)?
+//    var buttonTapAction: (() -> Void)?
+    
+    var calculateButtonAction: (() -> Void)?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -20,7 +22,7 @@ class usdAmountTextField: UITextField {
         
         let leadingFlex = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let trailingFlex = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let calculateButton = UIBarButtonItem(title: "Calculate Currency", style: .done, target: self, action: #selector(doneButtonTapped(_:)))
+        let calculateButton = UIBarButtonItem(title: "Calculate Currency", style: .done, target: self, action: #selector(calculateButtonTapped))
         toolbar.items = [leadingFlex, calculateButton, trailingFlex]
         
         toolbar.sizeToFit()
@@ -28,7 +30,11 @@ class usdAmountTextField: UITextField {
         self.inputAccessoryView = toolbar
     }
     
-    @objc private func doneButtonTapped(_ sender: UIBarButtonItem) {
-        buttonTapAction?()
+//    @objc private func doneButtonTapped(_ sender: UIBarButtonItem) {
+//        buttonTapAction?()
+//    }
+    
+    @objc private func calculateButtonTapped(_ sender: UIBarButtonItem) {
+        calculateButtonAction?()
     }
 }

@@ -21,11 +21,40 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        usdTextField.calculateButtonAction = {
+            self.calculate()
+        }
     }
 
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        print("button tapped!!!")
+        self.clear()
+    }
+    
+    func calculate() {
+        if self.usdTextField.isFirstResponder {
+            self.usdTextField.resignFirstResponder()
+        }
+        
+        guard let usdText = self.usdTextField.text,
+            let usdAmount = Double(usdText) else {
+                clear()
+                return
+        }
+        
+        let roundedUsdAmount = (100 * usdAmount).rounded() / 100
+        
+        let thbAmount = 33 * roundedUsdAmount
+        let roundedThbAmount = (100 * thbAmount).rounded() / 100
+        
+        // updates UI
+        self.usdTextField.text = String(format: "%.2f", roundedUsdAmount)
+        self.thbAmountLabel.text = String(format: "%.2f", roundedThbAmount)
+    }
+    
+    func clear() {
+        self.usdTextField.text = nil
+        self.thbAmountLabel.text = "0.00฿"
     }
     
 }
