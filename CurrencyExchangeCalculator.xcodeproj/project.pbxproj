@@ -13,6 +13,8 @@
 		049BFCB22183B02A003F2D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049BFCB12183B02A003F2D06 /* Assets.xcassets */; };
 		049BFCB52183B02A003F2D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BFCB32183B02A003F2D06 /* LaunchScreen.storyboard */; };
 		049FC51E2184D5A50039D762 /* usdAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FC51D2184D5A50039D762 /* usdAmountTextField.swift */; };
+		049FC53E218548A80039D762 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FC53D218548A80039D762 /* SecondViewController.swift */; };
+		049FC542218566250039D762 /* thbAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FC541218566250039D762 /* thbAmountTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		049BFCB42183B02A003F2D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049BFCB62183B02A003F2D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049FC51D2184D5A50039D762 /* usdAmountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usdAmountTextField.swift; sourceTree = "<group>"; };
+		049FC53D218548A80039D762 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		049FC541218566250039D762 /* thbAmountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thbAmountTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				049BFCAA2183B02A003F2D06 /* AppDelegate.swift */,
 				049BFCAC2183B02A003F2D06 /* ViewController.swift */,
+				049FC53D218548A80039D762 /* SecondViewController.swift */,
 				049BFCAE2183B02A003F2D06 /* Main.storyboard */,
 				049BFCB12183B02A003F2D06 /* Assets.xcassets */,
 				049BFCB32183B02A003F2D06 /* LaunchScreen.storyboard */,
 				049BFCB62183B02A003F2D06 /* Info.plist */,
 				049FC51D2184D5A50039D762 /* usdAmountTextField.swift */,
+				049FC541218566250039D762 /* thbAmountTextField.swift */,
 			);
 			path = CurrencyExchangeCalculator;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049FC53E218548A80039D762 /* SecondViewController.swift in Sources */,
+				049FC542218566250039D762 /* thbAmountTextField.swift in Sources */,
 				049BFCAD2183B02A003F2D06 /* ViewController.swift in Sources */,
 				049BFCAB2183B02A003F2D06 /* AppDelegate.swift in Sources */,
 				049FC51E2184D5A50039D762 /* usdAmountTextField.swift in Sources */,
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C5XTUX6GS;
 				INFOPLIST_FILE = CurrencyExchangeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C5XTUX6GS;
 				INFOPLIST_FILE = CurrencyExchangeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

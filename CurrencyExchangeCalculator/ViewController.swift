@@ -19,6 +19,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resetButton: UIButton!
     
+    @IBOutlet weak var pushToSecond: UIBarButtonItem!
+    
+    @IBAction func pushToSecondTapped(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "moveToSecond", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +37,8 @@ class ViewController: UIViewController {
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         self.clear()
     }
+    
+    
     
     func calculate() {
         if self.usdTextField.isFirstResponder {
@@ -55,6 +64,11 @@ class ViewController: UIViewController {
     func clear() {
         self.usdTextField.text = nil
         self.thbAmountLabel.text = "0.00฿"
+    }
+    
+    
+    @IBAction func unwindToView(_ sender: UIStoryboardSegue) {
+        
     }
     
 }
