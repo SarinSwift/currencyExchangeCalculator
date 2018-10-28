@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-Ja-fdp">
                                 <rect key="frame" x="15" y="590" width="345" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="SRA-G6-Zrl"/>
                                 </constraints>
@@ -72,7 +73,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.80392156859999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="9D3-rg-hqC"/>
                                     <constraint firstItem="wmr-8I-gXS" firstAttribute="centerY" secondItem="vOR-Js-ApV" secondAttribute="centerY" id="IWN-Ot-UJI"/>
@@ -112,7 +113,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nUW-8p-WgF" secondAttribute="trailing" constant="22" id="0ka-ME-0oI"/>
                                     <constraint firstItem="nUW-8p-WgF" firstAttribute="leading" secondItem="QPg-rJ-g9S" secondAttribute="leading" constant="11" id="8nB-NZ-UgX"/>
@@ -125,10 +126,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-2V-9lP">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-2V-9lP">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.56078431370000004" green="0.67843137249999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Currency Exchange" id="vos-W2-6UJ">
                                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="ZSl-zF-qra">
@@ -140,7 +146,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5607843137254902" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vOR-Js-ApV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="MN8-fc-Aa7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vOR-Js-ApV" secondAttribute="trailing" constant="11" id="Vjv-5a-Q7o"/>
@@ -180,7 +186,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKK-Cc-Q1A">
                                 <rect key="frame" x="15" y="590" width="345" height="60"/>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.80392156859999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="uPd-yw-9hA"/>
                                 </constraints>
@@ -228,7 +234,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OgZ-RQ-HrR" secondAttribute="trailing" constant="22" id="H2e-uS-iFh"/>
                                     <constraint firstAttribute="height" constant="220" id="QQ9-mX-3h8"/>
@@ -272,7 +278,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.80392156859999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="m1q-VN-5sb" secondAttribute="trailing" constant="22" id="ClI-9A-14Q"/>
                                     <constraint firstItem="m1q-VN-5sb" firstAttribute="centerY" secondItem="Cop-lT-vTv" secondAttribute="centerY" id="IN9-p1-ZYU"/>
@@ -285,10 +291,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvY-vU-7mq">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvY-vU-7mq">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.56078431370000004" green="0.67843137249999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Currency Exchange" id="r2d-oL-Qym">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="NPp-LW-v1q">
@@ -300,7 +310,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5607843137254902" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="49k-mE-LE9" firstAttribute="leading" secondItem="oSu-IP-Z6O" secondAttribute="leading" constant="11" id="7kw-qe-EHy"/>
                             <constraint firstItem="WKK-Cc-Q1A" firstAttribute="leading" secondItem="oSu-IP-Z6O" secondAttribute="leading" constant="15" id="HV5-K4-8f7"/>
@@ -327,7 +337,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ok-VW-zkw" sceneMemberID="firstResponder"/>
                 <exit id="pID-zv-OPc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="134"/>
+            <point key="canvasLocation" x="966" y="134"/>
         </scene>
     </scenes>
     <resources>
