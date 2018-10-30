@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class SecondViewController: UIViewController {
     
@@ -19,11 +20,15 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var resetButton: UIButton!
     
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBAction func backButton() {
     }
     
     
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     override func viewDidLoad() {
@@ -32,6 +37,10 @@ class SecondViewController: UIViewController {
         thbTextField.calculateButtonAction = {
             self.calculate()
         }
+        
+        bannerView.adUnitID = "ca-app-pub-1857654179007774/4279563817"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {

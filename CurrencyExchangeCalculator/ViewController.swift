@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
 
@@ -21,8 +22,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pushToSecond: UIBarButtonItem!
     
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     @IBAction func pushToSecondTapped(_ sender: UIBarButtonItem) {
         self.performSegue(withIdentifier: "moveToSecond", sender: self)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     
@@ -32,6 +39,11 @@ class ViewController: UIViewController {
         usdTextField.calculateButtonAction = {
             self.calculate()
         }
+        
+        bannerView.adUnitID = "ca-app-pub-1857654179007774/4806177428"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
     }
 
     @IBAction func resetButtonTapped(_ sender: UIButton) {
